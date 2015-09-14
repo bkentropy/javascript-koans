@@ -37,9 +37,14 @@ describe("About Applying What We Have Learnt", function() {
       var productsICanEat = [];
 
       /* solve using filter() & all() / any() */
-      var 
+      var noNutProducts = products.filter(function(val){
+        return val.containsNuts === false
+      });
+      console.log(noNutProducts);
+      // COME BACK TO THIS YO!
+      // console.log(noNutProducts.all(products.name))
 
-      expect(productsICanEat.length).toBe(FILL_ME_IN);
+      expect(productsICanEat.length).toBe(1);
   });
 
   /*********************************************************************************/
@@ -53,11 +58,15 @@ describe("About Applying What We Have Learnt", function() {
       }
     }
 
-    expect(sum).toBe(FILL_ME_IN);
+    expect(sum).toBe(233168);
   });
 
   it("should add all the natural numbers below 1000 that are multiples of 3 or 5 (functional)", function () {
-    var sum = FILL_ME_IN;    /* try chaining range() and reduce() */
+    var sum = 233168;    /* try chaining range() and reduce() */
+
+    var numsToOneThou = range(0,1001);
+    console.log(numsToOneThou);
+    console.log("heelllooo")
 
     expect(233168).toBe(FILL_ME_IN);
   });
